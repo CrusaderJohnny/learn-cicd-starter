@@ -27,4 +27,4 @@ jobs:
 
     steps:
       - name: Check Go FMT
-        run: go fmt ./...
+        run: test -z $(go fmt ./...)
