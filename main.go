@@ -100,6 +100,6 @@ func main() {
 	if err != nil || cleanPort < 1 || cleanPort > 65535 {
 		log.Fatalf("Invalid port configuration")
 	}
-	log.Printf("Serving on port: %s\n", cleanPort)
+	log.Printf("Serving on port: %v\n", cleanPort)
 	log.Fatal(srv.ListenAndServe())
 }
